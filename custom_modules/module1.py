@@ -40,4 +40,4 @@ def load_input_file(path1):
     csc_theta3 = csc_theta2[t9].reshape(mm,4,1)
     cnn_input = np.insert(csc_theta3.astype(int),[0], csc_phi3.astype(int), axis=2)
     
-    return cnn_input, arr_y[t9,0]
+    return cnn_input, arr_y[t9]
